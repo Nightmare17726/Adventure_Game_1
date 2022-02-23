@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <div class="wrapper clearfix">
+        <div class="main_box homepage">
+            <center>
+                <h3> Enter Your Name: </h3>
+                <input type="text" class="Username" id="userName" placeholder="Name">
+                <button onclick="setUserName()" id="userNameButton">SELECT</button>
+
+                <h3 id="Racechoice">Choose A Race:</h3>
+                <input type="text" class="race" id="raceChoice" placeholder=" Elf, Orc, or Human">
+                <button onclick="raceChoice()" id="raceChoiceButton"> SELECT</button>
+
+                <h3 id="genderChoice">Choose A Gender:</h3>
+                <button class="genderBtn" id="male" value="Male">Male</button>
+                <button class="genderBtn" id="female" value="Female">Female</button>
+
+                <h3 id="Classchoice">Choose A Class:</h3>
+                <input type="text" class="class" id="classChoice" placeholder="Warrior, Mage, Ranger, or Thief">
+                <button onclick="classChoice()" id="classChoiceButton"> SELECT</button>
+
+                <h3 id="homepage-forward">Begin Your Adventure!</h3>
+                <button onclick="naturePage()" id="playerInfoBtn"> NEXT</button>
+
+            </center>
+
+        </div>
+    </div>
+
+    <script src="index2.js"></script>
+
+
+</body>
+
+</html>

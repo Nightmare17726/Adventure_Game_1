@@ -1,0 +1,645 @@
+/**********************************************
+*** GENERAL
+**********************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(back.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Lato;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+    color: #555;
+}
+
+#shopBack {
+    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(shop.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Lato;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+    color: #555;
+}
+
+#playerInfoBack {
+    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(playerinfoback.png);
+    background-size: cover;
+    background-position: center;
+    font-family: Lato;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+    color: #555;
+}
+
+#natureBack {
+    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(fire.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Lato;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+    color: #555;
+}
+
+#tavernBack {
+    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(tavern.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Lato;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+    color: #555;
+}
+
+.title_txt {
+    color: crimson;
+}
+
+.wrapper {
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.main_box {
+    width: 1000px;
+    float: left;
+    height: 600px;
+    padding: 50px 80px;
+    background-color: #e8e8e8;
+}
+
+.pictureBox {
+    width: 250px;
+    float: right;
+    height: 400px;
+    padding: 50px 80px;
+    background-color: black;
+    border: black;
+}
+
+.playerInfoPicture {
+    position: absolute;
+    left: 70%;
+    top: 600px;
+    width: 300px;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.canvas {
+    width: 800px;
+    height: 200px;
+    object-position: bottom;
+    border: 2px solid black;
+    margin-top: 310px;
+}
+
+.tavernCanvas {
+    width: 840px;
+    height: 300px;
+    top: 240px;
+    border: 2px solid black;
+}
+
+#title {
+    position: absolute;
+    color: brown;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 35%;
+    font-size: 65px;
+    text-transform: uppercase;
+}
+
+#title-page-paragraph {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 50%;
+}
+
+
+/******
+******/
+
+.Username {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 520px;
+    color: #555;
+    font-size: 18px;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 10px;
+    width: 160px;
+    text-transform: uppercase;
+}
+
+.race {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 520px;
+    color: #555;
+    font-size: 18px;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 10px;
+    width: 160px;
+    text-transform: uppercase;
+}
+
+.class {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 520px;
+    color: #555;
+    font-size: 18px;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 10px;
+    width: 160px;
+    text-transform: uppercase;
+}
+
+.natureChoice {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 475px;
+    color: #555;
+    font-size: 18px;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 10px;
+    width: 285px;
+    text-transform: uppercase;
+}
+
+#userName {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    color: #555;
+    font-size: 18px;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 10px;
+    width: 350px;
+    text-transform: uppercase;
+}
+
+#raceChoice {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 230px;
+    color: #555;
+    font-size: 18px;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 10px;
+    width: 350px;
+    text-transform: uppercase;
+}
+
+#classChoice {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 430px;
+    color: #555;
+    font-size: 18px;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 10px;
+    width: 350px;
+    text-transform: uppercase;
+}
+
+#NatureChoice {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 430px;
+    color: #555;
+    font-size: 18px;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 10px;
+    width: 350px;
+    text-transform: uppercase;
+}
+
+#userNameButton {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 160px;
+    text-transform: uppercase;
+    width: 150px;
+}
+
+#raceChoiceButton {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 290px;
+    text-transform: uppercase;
+    width: 150px;
+}
+
+#classChoiceButton {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 490px;
+    text-transform: uppercase;
+    width: 150px;
+}
+
+#natureChoiceButton {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 540px;
+    text-transform: uppercase;
+    width: 150px;
+}
+
+#back-PlayerInfo {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 7%;
+    top: 15px;
+    text-transform: uppercase;
+    width: 100px;
+}
+
+#genderChoice {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 320px;
+    left: 50%;
+}
+
+#Racechoice {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 200px;
+    left: 50%;
+}
+
+#Classchoice {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 400px;
+    left: 50%;
+}
+
+
+/*Gender Buttons*/
+
+#male {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 45%;
+    top: 360px;
+    text-transform: uppercase;
+    width: 100px;
+}
+
+#female {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 55%;
+    top: 360px;
+    text-transform: uppercase;
+    width: 100px;
+}
+
+#homepage-forward {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 535px;
+    left: 50%;
+}
+
+#homepage-forward2 {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 535px;
+    left: 50%;
+}
+
+#homepage-shop1 {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 535px;
+    left: 75%;
+}
+
+#homepage-back {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 535px;
+    left: 25%;
+}
+
+#playerInfoBtn {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 570px;
+    text-transform: uppercase;
+    width: 150px;
+}
+
+#scene1Button2 {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 570px;
+    text-transform: uppercase;
+    width: 100px;
+}
+
+#shop1Button1 {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 75%;
+    top: 570px;
+    text-transform: uppercase;
+    width: 100px;
+}
+
+#playerInfo-Back {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 25%;
+    top: 570px;
+    text-transform: uppercase;
+    width: 100px;
+}
+
+#indexButton {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 550px;
+    text-transform: uppercase;
+    width: 200px;
+}
+
+
+/*********************************************
+Player Info Page
+*********************************************/
+
+#playerInfoName {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 130px;
+    left: 25%;
+}
+
+#playerInfoRace {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 210px;
+    left: 25%;
+}
+
+#playerInfoGender {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 290px;
+    left: 25%;
+}
+
+#playerInfoClass {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 370px;
+    left: 25%;
+}
+
+#playerInfoNature {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 420px;
+    left: 35%;
+}
+
+#playerInfoCash {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 480px;
+    left: 25%;
+}
+
+
+/*****
+*****/
+
+#playerInfoUserName {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 130px;
+    left: 35%;
+}
+
+#playerInfoRaceSelection {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 210px;
+    left: 35%;
+}
+
+#playerInfoGenderSelection {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 290px;
+    left: 35%;
+}
+
+#playerInfoClassSelection {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 370px;
+    left: 35%;
+}
+
+#playerInfoNatureSelection {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 420px;
+    left: 25%;
+}
+
+#playerInfoCashAmount {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 480px;
+    left: 35%;
+}
+
+
+/*************************************************************
+Shop Item Buttons
+*************************************************************/
+
+#shopKeeper1 {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 80px;
+    text-transform: uppercase;
+    width: 200px;
+    background-color: chartreuse;
+}
+
+#shopItem1 {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 20%;
+    top: 140px;
+    text-transform: uppercase;
+    width: 160px;
+}
+
+#shopItem2 {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 40%;
+    top: 140px;
+    text-transform: uppercase;
+    width: 160px;
+}
+
+#shopItem3 {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 60%;
+    top: 140px;
+    text-transform: uppercase;
+    width: 160px;
+}
+
+#shopItem4 {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 80%;
+    top: 140px;
+    text-transform: uppercase;
+    width: 160px;
+}
+
+#shopHealth {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 20%;
+    top: 280px;
+    text-transform: uppercase;
+    width: 160px;
+}
+
+#shopMana {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 80%;
+    top: 280px;
+    text-transform: uppercase;
+    width: 160px;
+}
+
+#shopPurchase {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 43%;
+    top: 280px;
+    text-transform: uppercase;
+    width: 100px;
+    background-color: aqua;
+}
+
+#shopCancel {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 58%;
+    top: 280px;
+    text-transform: uppercase;
+    width: 100px;
+    background-color: red;
+}
+
+#shopRefresh {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 320px;
+    text-transform: uppercase;
+    width: 100px;
+    background-color: #daadff;
+}
+
+
+/*************************************************************
+Tavern Conversation Buttons
+*************************************************************/
+
+#tavern1Btn1 {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 30%;
+    top: 450px;
+    text-transform: uppercase;
+    width: 160px;
+}
+
+#tavern1Btn2 {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 450px;
+    text-transform: uppercase;
+    width: 160px;
+}
+
+#tavern1Btn3 {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 70%;
+    top: 450px;
+    text-transform: uppercase;
+    width: 160px;
+}
